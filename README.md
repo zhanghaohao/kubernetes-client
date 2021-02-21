@@ -5,13 +5,13 @@ kubernetes客户端，通过加载kubeconfig来和kubernetes集群通讯。支�
 #### 创建一个golang项目 
 `mkdir -p test/src/test`
 #### 创建go.mod
-`cd test/src/test`
+`cd test/src/test`     
 `go mod init test`
 #### 创建main函数
 `touch test.go`
 
 test.go文件如下：
-```
+```golang
 package main
 
 import (
@@ -48,7 +48,7 @@ require (
 	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83 // indirect
 	golang.org/x/oauth2 v0.0.0-20210220000619-9bb904979d93 // indirect
 	golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba // indirect
-	k8s.io/client-go {red}{v0.15.7} // indirect
+	k8s.io/client-go $\color{red}{v0.15.7}$ // indirect
 )
 ```
 #### 再次重新下载依赖包
