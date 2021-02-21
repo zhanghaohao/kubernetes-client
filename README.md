@@ -64,6 +64,7 @@ require (
 ## 构建多集群k8s客户端
 支持两种方式构建多集群k8s客户端
 ### 通过指定kubeconfig文件路径
+```golang
 kubeConfigPaths := []k8sCli.KubeConfigPath{
 		{
 			ClusterName: "cluster1",
@@ -79,6 +80,7 @@ if err != nil {
 	fmt.Println(err)
 	return
 }
+```
 ### 通过kubeconfig结构体
 ## k8s公共资源对象
 有k8s公共资源对象`CommonResourceObject`，里面包含`Create`,`Update`,`Delete`,`Get`等方法，这样你在不知道要操作的是哪种资源对象的时候可以不用写`if ... else ...`来判断资源对象类型了，代码更加简洁和高效。
