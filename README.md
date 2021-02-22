@@ -37,7 +37,7 @@ func main()  {
 #### 配置GOPROXY
 由于国内下载golang依赖包很慢，而且有些包还无法下载，所以通常我们都需要先配置GOPROXY。    
 `export GOPROXY=https://goproxy.io`    
-为了一劳永逸，你可以把上面这一行放在~/.bash_profile里面，这样每次打开终端就会自动生效。
+为了一劳永逸，你可以把上面这一行放在`~/.bash_profile`里面，这样每次打开终端就会自动生效。
 #### 下载kubernetes-client及其他依赖包
 `go mod vendor`
 #### 修改依赖包版本
